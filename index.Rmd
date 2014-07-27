@@ -59,4 +59,11 @@ modelFit <- train(Survived ~ ., data = Titanic, method = "glm")
 
 The final product was made available online at: https://thanhtnguyen.shinyapps.io/Coursera/
 
-User can select their own scenario and our server will make predictions for them
+User can select their own scenario, including:
+1. Age
+2. Gender
+3. Ticket type
+4. Number of family members onboard
+
+and our server will make predictions for them. The result will then 
+be displayed in a user friendly manner to the user.
