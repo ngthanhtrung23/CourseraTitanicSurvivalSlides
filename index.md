@@ -25,20 +25,16 @@ A Titanic survival dataset contains
 
 
 ```
-## Error: could not find function "getURL"
+## Loading required package: bitops
 ```
 
 ```
-## Error: incorrect number of dimensions
-```
-
-```
-##  table [1:4, 1:2, 1:2, 1:2] 0 0 35 0 0 0 17 0 118 154 ...
-##  - attr(*, "dimnames")=List of 4
-##   ..$ Class   : chr [1:4] "1st" "2nd" "3rd" "Crew"
-##   ..$ Sex     : chr [1:2] "Male" "Female"
-##   ..$ Age     : chr [1:2] "Child" "Adult"
-##   ..$ Survived: chr [1:2] "No" "Yes"
+## 'data.frame':	891 obs. of  5 variables:
+##  $ Survived: int  0 1 1 1 0 0 0 0 1 1 ...
+##  $ Pclass  : int  3 1 3 1 3 3 1 3 3 2 ...
+##  $ Sex     : Factor w/ 2 levels "female","male": 2 1 1 1 2 2 2 2 1 1 ...
+##  $ Age     : num  22 38 26 35 35 NA 54 2 27 14 ...
+##  $ Parch   : int  0 0 0 0 0 0 0 1 2 0 ...
 ```
 
 ---
@@ -65,6 +61,7 @@ modelFit <- train(Survived ~ ., data = Titanic, method = "glm")
 The final product was made available online at: https://thanhtnguyen.shinyapps.io/Coursera/
 
 User can select their own scenario, including:
+
 1. Age
 2. Gender
 3. Ticket type

@@ -25,6 +25,7 @@ A Titanic survival dataset contains
 
 ```{r echo=F}
 # Load the Titanic dataset
+library(RCurl)
 if (file.exists('train.csv')) { # The file is in local
     Titanic = read.csv('train.csv')
 } else {
@@ -60,6 +61,7 @@ modelFit <- train(Survived ~ ., data = Titanic, method = "glm")
 The final product was made available online at: https://thanhtnguyen.shinyapps.io/Coursera/
 
 User can select their own scenario, including:
+
 1. Age
 2. Gender
 3. Ticket type
